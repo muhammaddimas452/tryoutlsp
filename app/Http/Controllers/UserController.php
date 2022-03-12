@@ -17,7 +17,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $artikel = Artikel::with('kategori', 'user','kategori')->get();
+        $artikel = Artikel::with('kategori', 'user')->get();
         $kategori = Kategori::get();
         $user = User::get();
         $terbaru = Artikel::orderBy("created_at", "desc")->paginate(3);
