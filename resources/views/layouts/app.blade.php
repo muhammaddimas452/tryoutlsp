@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard V.2 | Kiaalap - Kiaalap Admin Template</title>
+    <title>Admin MQ</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{url('img/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url('img/logomq3.png') }}">
     <!-- Google Fonts
 		============================================ -->
     <link href="{{url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900') }}" rel="stylesheet">
@@ -973,7 +973,7 @@
             </div>
         </div>
         @yield('content')
-        <div class="footer-copyright-area">
+        {{-- <div class="footer-copyright-area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -983,7 +983,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 
     <!-- jquery

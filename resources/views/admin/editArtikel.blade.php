@@ -24,7 +24,7 @@
                                             </div>
                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                                 <div class="form-select-list">
-                                                    <select class="form-control custom-select-value" name="kategori_id">
+                                                    <select class="form-control custom-select-value" name="kategori_id" >
                                                         <option value="">Pilih Kategori</option>
                                                     @foreach ($kategori as $item)
                                                         <option value="{{$item->id}}">{{ $item->nama_kategori}}</option>
@@ -50,7 +50,7 @@
                                                 <label class="login2 pull-right pull-right-pro">Isi Artikel</label>
                                             </div>
                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" class="form-control" value="{{$artikel->isi_artikel}}" name="isi_artikel" />
+                                                <textarea type="text" rows="4" class="form-control" name="isi_artikel" >{{$artikel->isi_artikel}}</textarea>
                                             </div>
                                         </div>
                                     </div>

@@ -9,10 +9,10 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Vizew - Blog &amp; Magazine HTML Template</title>
+    <title>Artikel MQ</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{url('assets/img/core-img/favicon.ico') }}">
+    <link rel="icon" href="{{url('img/logomq3.png') }}">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{url('assets/style.css') }}">

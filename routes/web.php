@@ -25,7 +25,9 @@ Route::get('/login', [AuthController::class,'viewLogin'])->middleware('guest')->
 Route::post('/log', [AuthController::class,'login'])->middleware('guest')->name('loginProses');
 Route::get('/logout', [AuthController::class, "logout"])->name('logout');
 Route::get('/', [UserController::class,'index'])->name('beranda');
+Route::get('/grid', [UserController::class,'indexgrid'])->name('berandagrid');
 Route::get('/artikel', [UserController::class, "artikel"])->name('artikel');
+Route::get('/artikel-grid', [UserController::class, "artikelgrid"])->name('artikelgrid');
 Route::get('/detail-artikel/{id}', [UserController::class, "show"])->name('detailArtikel');
 
 Route::group(['auth:sanctum'], function() {

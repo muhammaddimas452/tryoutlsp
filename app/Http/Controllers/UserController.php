@@ -20,9 +20,19 @@ class UserController extends Controller
         $artikel = Artikel::with('kategori', 'user')->get();
         $kategori = Kategori::get();
         $user = User::get();
-        $terbaru = Artikel::orderBy("created_at", "desc")->paginate(3);
+        $terbaru = Artikel::orderBy("created_at", "desc")->paginate(4);
         $baca = Artikel::orderBy("views", "desc")->paginate(3);
         return view("beranda", compact('artikel', 'kategori', 'user', 'terbaru', 'baca'));
+    }
+    
+    public function indexgrid()
+    {
+        $artikel = Artikel::with('kategori', 'user')->get();
+        $kategori = Kategori::get();
+        $user = User::get();
+        $terbaru = Artikel::orderBy("created_at", "desc")->paginate(4);
+        $baca = Artikel::orderBy("views", "desc")->paginate(3);
+        return view("berandagrid", compact('artikel', 'kategori', 'user', 'terbaru', 'baca'));
     }
 
     public function artikel()
@@ -35,10 +45,15 @@ class UserController extends Controller
         return view("artikel", compact('artikel', 'kategori', 'user', 'artikels', 'baca'));
     }
 
-    // public function detailArtikel()
-    // {
-    //     return view("detailArtikel");
-    // }
+    public function artikelgrid()
+    {
+        $artikel = Artikel::all();
+        $kategori = Kategori::get();
+        $user = User::get();
+        $artikels = Artikel::paginate(4);
+        $baca = Artikel::orderBy("views", "desc")->paginate(3);
+        return view("artikelgrid", compact('artikel', 'kategori', 'user', 'artikels', 'baca'));
+    }
 
     /**
      * Show the form for creating a new resource.

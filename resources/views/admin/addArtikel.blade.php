@@ -50,7 +50,7 @@
                                                 <label class="login2 pull-right pull-right-pro">Isi Artikel</label>
                                             </div>
                                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" class="form-control" name="isi_artikel" />
+                                                <textarea type="text" rows="4" class="form-control" name="isi_artikel" ></textarea>
                                             </div>
                                         </div>
                                     </div>

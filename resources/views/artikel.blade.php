@@ -31,8 +31,8 @@
                         </div>
                         <!-- View Options -->
                         <div class="view-options">
-                            {{-- <a href="archive-grid.html"><i class="fa fa-th-large" aria-hidden="true"></i></a> --}}
-                            <a href="archive-list.html" class="active"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+                            <a href="/artikel" ><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+                            <a href="/artikel-grid" ><i class="fa fa-th-large" aria-hidden="true"></i></a>
                         </div>
                     </div>
 

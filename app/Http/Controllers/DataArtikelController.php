@@ -61,6 +61,7 @@ class DataArtikelController extends Controller
         $artikel->kategori_id = $request->kategori_id;
         $artikel->judul_artikel = $request->judul_artikel;
         $artikel->isi_artikel = $request->isi_artikel;
+        $artikel->views = 0;
         // $imageName = time().'.'.$request->gambar_artikel->extension();
         // $artikel->gambar_artikel = $request->gambar_artikel->move(public_path('gambar'), $imageName);
         if($request->hasFile('gambar_artikel')){

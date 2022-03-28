@@ -32,7 +32,8 @@
                         <!-- View Options -->
                         <div class="view-options">
                             {{-- <a href="archive-grid.html"><i class="fa fa-th-large" aria-hidden="true"></i></a> --}}
-                            <a href="archive-list.html" class="active"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+                            <a href="/" ><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+                            <a href="/grid" ><i class="fa fa-th-large" aria-hidden="true"></i></a>
                         </div>
                     </div>
 
@@ -44,7 +45,6 @@
                                 <!-- Post Thumbnail -->
                                 <div class="post-thumbnail">
                                     <img src="../../{{$item->gambar_artikel}}" alt="">
-
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
@@ -59,7 +59,7 @@
                                     </div>
                                     <p class="mb-2">{{$item->isi_artikel}}</p>
                                     <div class="post-meta d-flex">
-                                        <a href="#"><i class="fa fa-eye margin-right-5" aria-hidden="true"></i>{{$item->views}}</a>
+                                        <a href="#"><i class="fa fa-eye mr-2" aria-hidden="true"></i>{{$item->views}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +71,6 @@
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="sidebar-area">
-
                         <!-- ***** Single Widget ***** -->
                         <div class="single-widget">
                             <!-- Section Heading -->
@@ -90,7 +89,7 @@
                                     <a href="single-post.html" class="post-title">{{ $item->judul_artikel}}</a>
                                     <div class="post-meta d-flex justify-content-between">
                                         <a href="#"><i class="fa fa-eye mr-1" aria-hidden="true"></i>{{ $item->views}}</a>
-                                        <a href="#" class="ml-1 mr-2"><i class="fa fa-pencil" aria-hidden="true"></i>{{ $item->created_at}}</a>
+                                        <a href="#" class="ml-2"><i class="fa fa-pencil mr-1" aria-hidden="true"></i>{{ $item->created_at}}</a>
                                     </div>
                                 </div>
                             </div>

@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Login | Kiaalap - Kiaalap Admin Template</title>
+    <title>Login Admin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomq3.png">
     <!-- Google Fonts
 		============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
@@ -56,15 +56,15 @@
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- buttons CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/buttons.css">
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body>
-    <!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+<body class="bg-success">
 	<div class="error-pagewrap">
 		<div class="error-page-int">
 			<div class="text-center m-b-md custom-login">
@@ -86,13 +86,13 @@
                                 <input type="password" title="Please enter your password" placeholder="******" required="" name="password" id="password" class="form-control">
                                 <span class="help-block small">Yur strong password</span>
                             </div>
-                            <button class="btn btn-success btn-block loginbtn" type="submit">Login</button>
+                            <button class="btn btn-custon-four btn-success btn-block" type="submit">Login</button>
                         </form>
                     </div>
                 </div>
 			</div>
 			<div class="text-center login-footer">
-				<p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
+				<p>Copyright © 2018. All rights reserved.</p>
 			</div>
 		</div>   
     </div>
